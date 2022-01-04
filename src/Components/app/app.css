@@ -1,0 +1,123 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    background-color: #010920;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.post-card {
+    position: relative;
+    width: 420px;
+    height: 540px;
+    background-color: #252E42;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+}
+
+.post-list-item {
+    cursor: pointer;
+    margin-bottom: 18px;
+    list-style: none;
+    padding-left: 30px;
+    display: flex;
+}
+
+.first-rotate-card {
+    position: absolute;
+    transform: rotate(-4.48deg);
+    height: 85px;
+    width: 342px;
+    border-radius: 20px;
+    background-color: #4F5565;
+    z-index: 1;
+    top: -20px;
+}
+
+.second-rotate-card {
+    top: -10px;
+    position: absolute;
+    transform: rotate(-2.32deg);
+    height: 68px;
+    width: 395px;
+    border-radius: 20px;
+    background-color: #31394D;
+    z-index: 2;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-container h1 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.header-container button {
+    padding: 5px 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    text-transform: uppercase;
+    color: white;
+    background-color: #FF8469;
+    border-radius: 7px;
+}
+
+.add-button {
+    padding-top: 30px;
+    padding-right: 30px;
+}
+
+.author {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    height: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #252E42;
+}
+
+@media (min-width: 428px) {
+    .post-card {
+        width: 397px;
+        height: 540px;
+    }
+
+    .first-rotate-card {
+        height: 86px;
+        width: 307px;
+    }
+    
+    .second-rotate-card {
+        width: 355px;
+    }
+}
